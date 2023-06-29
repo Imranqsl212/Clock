@@ -1,9 +1,9 @@
 const clockTime = () => {
   const now = new Date();
   const time = document.querySelector(".wrapper h1");
-  hours = now.getHours();
-  min = now.getMinutes();
-  sec = now.getSeconds();
+  let hours = now.getHours();
+  let min = now.getMinutes();
+  let sec = now.getSeconds();
   const formattedMin = min < 10 ? `0${min}` : min;
   const formattedSec = sec < 10 ? `0${sec}` : sec;
   const formattedHours = hours < 10 ? `0${hours}` : hours;
